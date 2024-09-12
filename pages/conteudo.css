@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "Comodo";
+    src: url("../fonts/comodo-comodo-regular-400.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Light.ttf") format("truetype");
+}
+
+/* Reseta margens e preenchimentos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --sonichedgehog: #0000CD;
+    --hollowpurple: #a729f5;
+    --white: #fff;
+    --cinza-square: rgba(86, 86, 86, 0.83);
+}
+
+body {
+    max-width: 1440px; /* Define a largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo e adiciona espaço nas laterais */
+    padding-top: 70px;
+    background: url('../images/kyle-gregory-devaras-QFjSiok61xA-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.barra {
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(to right, var(--sonichedgehog), var(--hollowpurple));
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    z-index: 10;
+}
+
+.logo {
+    height: 120px; /* Ajuste a altura para coincidir com a barra */
+}
+
+.menu {
+    font-family: "Comodo";
+    display: flex;
+    gap: 150px; /* Espaço entre os itens */
+    flex: 1;
+    justify-content: center; /* Centraliza os itens dentro do menu */
+    margin-right: 200px;
+}
+
+.menu a {
+    font-family: 'Comodo', sans-serif;
+    font-weight: 500;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.2rem; /* Ajuste conforme necessário */
+    font-family: Comodo;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.conteudos {
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 70px); /* Garante que o conteúdo ocupe a altura total da viewport menos a altura da barra */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    align-items: center; /* Centraliza horizontalmente o conteúdo */
+    padding: 40px; /* Espaço interno ao redor do conteúdo */
+    text-align: center; /* Garante que o texto também esteja centralizado */
+}
+
+.conteudos h1 {
+    font-family: Comodo;
+    font-weight: 900;
+    color: var(--white);
+    font-size: 3rem; /* Ajuste conforme necessário */
+    margin-bottom: 40px; /* Espaço abaixo do título */
+}
+
+.imagem-container {
+    display: grid; /* Usa grid para layout de colunas e linhas */
+    grid-template-columns: repeat(2, 1fr); /* Define duas colunas de largura igual */
+    gap: 20px; /* Espaço entre os itens da grade */
+    width: 80%; /* Ajuste conforme necessário */
+    max-width: 900px; /* Limite máximo da largura para evitar rolagem */
+}
+
+.imagem-item {
+    text-align: center;
+    width: 100%; /* Garante que o item ocupe a largura total da célula da grade */
+}
+
+.imagem-item img {
+    width: 100%; /* Ajusta o tamanho da imagem para preencher o contêiner */
+    height: 150px; /* Ajuste a altura conforme necessário */
+    object-fit: cover; /* Garante que a imagem cubra o contêiner sem distorcer */
+    border: 4px solid var(--white); /* Bordas brancas */
+    border-radius: 8px; /* Borda arredondada */
+}
+
+.imagem-item p {
+    font-family: Montserrat;
+    font-weight: 600;
+    color: var(--white);
+    margin-top: 10px; /* Espaço acima do texto */
+}

@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "Comodo";
+    src: url("../../fonts/comodo-comodo-regular-400.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../../fonts/Montserrat-Light.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --sonichedgehog: #0000CD;
+    --hollowpurple: #a729f5;
+    --white: #fff;
+    --cinza-square: rgba(86, 86, 86, 0.83);
+}
+
+
+body {
+    max-width: 1440px; /* Define a largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo e adiciona espaço nas laterais */
+    padding-top: 70px;
+    background: url('../images/kyle-gregory-devaras-QFjSiok61xA-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.barra {
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(to right, var(--sonichedgehog), var(--hollowpurple));
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    z-index: 10;
+}
+
+.logo {
+    height: 120px; /* Ajuste a altura para coincidir com a barra */
+}
+
+.menu {
+    display: flex;
+    gap: 150px; /* Espaço entre os itens */
+    flex: 1;
+    justify-content: center; /* Centraliza os itens dentro do menu */
+    margin-right: 200px;
+}
+
+.menu a {
+    font-family: Comodo;
+    font-weight: 500;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.2rem; /* Ajuste conforme necessário */
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Estilização geral */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Montserrat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container do quiz */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilização da caixa do quiz */
+.quiz-box {
+    background-color: rgba(64, 64, 64, 0.9); /* Fundo cinza com opacidade */
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 600px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Título do quiz */
+.quiz-box h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: Comodo;
+}
+
+/* Texto descritivo */
+.quiz-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Botão de iniciar */
+.start-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #218838;
+}

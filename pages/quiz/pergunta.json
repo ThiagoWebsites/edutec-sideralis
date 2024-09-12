@@ -1,0 +1,104 @@
+{
+    "perguntas": [
+        {
+            "pergunta": "O que acontece na eclipse lunar?",
+            "opcoes": [
+                "A) A Terra bloqueia a luz do sol para a lua",
+                "B) A Terra bloqueia a luz da lua para o sol",
+                "C) A lua fica em frente ao sol",
+                "D) O sol fica em frente da lua, impossibilitando nós de vê-la"
+            ],
+            "respostaCorresta": "A) A Terra bloqueia a luz do sol para a lua"
+        },
+        {
+            "pergunta": "O que é um meteoro?",
+            "opcoes": [
+                "A) Um fragmento de asteroide que atinge a Terra, criando uma cratera.",
+                "B) Um corpo celeste que orbita o Sol e possui cauda brilhante quando próximo do Sol.",
+                "C) Um fenômeno luminoso que ocorre quando um meteoroide entra na atmosfera terrestre e se desintegra.",
+                "D) Um pequeno satélite artificial que orbita a Terra."
+            ],
+            "respostaCorresta": "C) Um fenômeno luminoso que ocorre quando um meteoroide entra na atmosfera terrestre e se desintegra."
+        },
+        {
+            "pergunta": "O que causa a formação das auroras boreais e austrais?",
+            "opcoes": [
+                "A) A colisão de partículas solares carregadas com moléculas de água na atmosfera terrestre.",
+                "B) A interação de partículas do vento solar com o campo magnético da Terra, que excitam os gases na atmosfera, causando luzes coloridas.",
+                "C) A reflexão da luz solar nas camadas mais altas da atmosfera terrestre.",
+                "D) A atividade vulcânica nas regiões polares que emite gases incandescentes para a atmosfera."
+            ],
+            "respostaCorresta": "B) A interação de partículas do vento solar com o campo magnético da Terra, que excitam os gases na atmosfera, causando luzes coloridas."
+        },
+        {
+            "pergunta": "Qual a velocidade da luz no vácuo?",
+            "opcoes": [
+                "A) 300 km/s",
+                "B) 300.000 km/s",
+                "C) 300.000 km/h",
+                "D) 3.000 km/s"
+            ],
+            "respostaCorresta": "B) 300.000 km/s"
+        },
+        {
+            "pergunta": "Marque a alternativa cujo todos são exemplos de uso da velocidade da luz:",
+            "opcoes": [
+                "A) GPS, Cinema, Máquinas de Lavar Roupas e Comunicações.",
+                "B) Refrigeração, Culinária, GPS, Energias Renováveis.",
+                "C) Energia Solar, Visão, TV, Comunicações.",
+                "D) Transporte de Carga, Refrigeração, Energias Renováveis e GPS."
+            ],
+            "respostaCorresta": "C) Energia Solar, Visão, TV, Comunicações."
+        },
+        {
+            "pergunta": "Quanto tempo a Terra leva para completar uma rotação completa em torno de seu eixo?",
+            "opcoes": [
+                "A) 24 horas",
+                "B) 365 dias",
+                "C) 12 horas",
+                "D) 48 horas"
+            ],
+            "respostaCorresta": "A) 24 horas"
+        },
+        {
+            "pergunta": "O que resulta diretamente do movimento de translação da Terra ao redor do Sol?",
+            "opcoes": [
+                "A) A sucessão do dia e da noite",
+                "B) As fases da Lua",
+                "C) As estações do ano",
+                "D) Os eclipses solares"
+            ],
+            "respostaCorresta": "C) As estações do ano"
+        },
+        {
+            "pergunta": "Como a inclinação do eixo da Terra em relação ao plano de sua órbita ao redor do Sol afeta o nosso planeta?",
+            "opcoes": [
+                "A) Causa a alternância das marés altas e baixas",
+                "B) Provoca as diferentes estações do ano",
+                "C) Determina a duração de um ano",
+                "D) Define a intensidade dos ventos alísios"
+            ],
+            "respostaCorresta": "B) Provoca as diferentes estações do ano"
+        },
+        {
+            "pergunta": "Quem foi o primeiro ser humano a pisar na Lua, e em que ano isso aconteceu?",
+            "opcoes": [
+                "A) Yuri Gagarin, 1961",
+                "B) Neil Armstrong, 1969",
+                "C) Buzz Aldrin, 1969",
+                "D) Alan Shepard, 1971"
+            ],
+            "respostaCorresta": "B) Neil Armstrong, 1969"
+        },
+        {
+            "pergunta": "Qual das seguintes características define o ambiente do espaço sideral?",
+            "opcoes": [
+                "A) Alta pressão atmosférica e temperaturas amenas",
+                "B) Ausência de gravidade e temperaturas extremamente variáveis",
+                "C) Presença de ar respirável e temperaturas estáveis",
+                "D) Alta umidade e fortes ventos solares"
+            ],
+            "respostaCorresta": "B) Ausência de gravidade e temperaturas extremamente variáveis"
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "Comodo";
+    src: url("../../fonts/comodo-comodo-regular-400.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../../fonts/Montserrat-Light.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --sonichedgehog: #0000CD;
+    --hollowpurple: #a729f5;
+    --white: #fff;
+    --cinza-square: rgba(86, 86, 86, 0.83);
+}
+
+
+
+
+body {
+    max-width: 1440px; /* Define a largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo e adiciona espaço nas laterais */
+    padding-top: 70px;
+    background: url('../images/kyle-gregory-devaras-QFjSiok61xA-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.barra {
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(to right, var(--sonichedgehog), var(--hollowpurple));
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    z-index: 10;
+}
+
+.logo {
+    height: 120px; /* Ajuste a altura para coincidir com a barra */
+}
+
+.menu {
+    display: flex;
+    gap: 150px; /* Espaço entre os itens */
+    flex: 1;
+    justify-content: center; /* Centraliza os itens dentro do menu */
+    margin-right: 200px;
+}
+
+.menu a {
+    font-family: Comodo;
+    font-weight: 500;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.2rem; /* Ajuste conforme necessário */
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Estilização da seção dos planetas */
+.planetas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px; /* Espaçamento entre os planetas */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    padding: 2px;
+    text-align: center;
+}
+
+.planeta img {
+    width: 150px; /* Aumenta o tamanho dos planetas */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5%; /* Faz as imagens ficarem circulares */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Adiciona sombra para destacar as imagens */
+    transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+.planeta img:hover {
+    transform: scale(1.15); /* Ampliação leve ao passar o mouse */
+}
+
+.planetas{
+    padding: 1px;
+}

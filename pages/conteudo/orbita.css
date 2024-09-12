@@ -1,0 +1,231 @@
+@font-face {
+    font-family: "Comodo";
+    src: url("../../fonts/comodo-comodo-regular-400.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../../fonts/Montserrat-Light.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --sonichedgehog: #0000CD;
+    --hollowpurple: #a729f5;
+    --white: #fff;
+    --cinza-square: rgba(0, 0, 0, 0.678);
+}
+
+body {
+    max-width: 1440px; /* Define a largura máxima do conteúdo */
+    margin: 0 auto; /* CENTRALIZA O CONTEÚDO E ADICIONA ESPAÇO NAS LATERAIS */
+    padding-top: 70px; /* ESPAÇO PARA A BARRA DE NAVEGAÇÃO */
+    background: url('../../images/kyle-gregory-devaras-QFjSiok61xA-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh; /* GARANTE QUE O BODY TENHA NO MÍNIMO A ALTURA DA TELA */
+    overflow-x: hidden; /* EVITA ROLAGEM HORIZONTAL, SE NECESSÁRIO */
+}
+
+.barra {
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(to right, var(--sonichedgehog), var(--hollowpurple));
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0; /* ESPAÇO INTERNO NA BARRA DE NAVEGAÇÃO */
+    z-index: 10;
+}
+
+.logo {
+    height: 120px; /* AJUSTE A ALTURA PARA COINCIDIR COM A BARRA */
+}
+
+.menu {
+    display: flex;
+    gap: 150px; /* ESPAÇO ENTRE OS ITENS DO MENU */
+    flex: 1;
+    justify-content: center; /* CENTRALIZA OS ITENS DENTRO DO MENU */
+    margin-right: 200px;
+}
+
+.menu a {
+    font-family: Comodo;
+    font-weight: 500;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.2rem; /* AJUSTE CONFORME NECESSÁRIO */
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.titulo {
+    font-size: 220%;
+    text-align: center;
+    color: var(--white);
+    padding-top: 70px; /* ESPAÇO SUFICIENTE PARA A BARRA DE NAVEGAÇÃO */
+    margin-bottom: 20px; /* ESPAÇO ABAIXO DO TÍTULO */
+    font-family: Comodo;
+}
+
+
+/* ESTILIZAÇÃO PARA AS SEÇÕES INDIVIDUAIS */
+.velocidade-luz, .dia-dia{
+    position: relative; /* Define o contexto de posicionamento para o pseudo-elemento */
+    display: flex;
+    justify-content: space-between; /* Espaça a imagem e o texto para os lados opostos */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 140px; /* Espaço interno na seção */
+    flex: 1; /* Permite que as seções ocupem espaço igual */
+    box-sizing: border-box; /* Inclui o padding e bordas no tamanho total do elemento */
+}
+
+/* TAMANHO DO QUADRADO CINZA (ALTERE AQUI) */
+.velocidade-luz::before, .dia-dia::before {
+    content: ""; /* Necessário para criar o pseudo-elemento */
+    position: absolute; /* Posiciona o pseudo-elemento em relação ao contêiner pai */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    width: 80%; /* DEFINE A LARGURA DO QUADRADO (ALTERE AQUI) */
+    height: 80%; /* DEFINE A ALTURA DO QUADRADO (ALTERE AQUI) */
+    background-color: var(--cinza-square); /* Cor cinza definida no :root */
+    transform: translate(-50%, -50%); /* Ajusta o posicionamento para centralizar o quadrado */
+    z-index: -1; /* Garante que o quadrado fique atrás do conteúdo */
+}
+
+.velocidade-luz img{
+    width: 50%; /* AJUSTA A LARGURA DA IMAGEM CONFORME NECESSÁRIO */
+}
+
+.velocidade-luz .texto {
+    width: 50%; /* AJUSTA A LARGURA DO TEXTO CONFORME NECESSÁRIO */
+    font-family: Montserrat;
+    font-weight: 500;
+    text-align: left; /* ALINHA O TEXTO À ESQUERDA */
+    padding: 20px; /* ESPAÇO INTERNO NO TEXTO */
+    color: var(--white);
+    box-sizing: border-box; /* INCLUI O PADDING E BORDAS NO TAMANHO TOTAL DO ELEMENTO */
+}
+
+.nova-secao {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 140px;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.nova-secao::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%; /* Tamanho do quadrado cinza */
+    height: 80%; /* Tamanho do quadrado cinza */
+    background-color: var(--cinza-square);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.quadrado-cinza {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+.velocidade-luz p {
+    margin-bottom: 20px; /* add space between paragraphs */
+  }
+
+  .velocidade-luz   h5{
+    margin-bottom: 40px; /* add space between h2 and image */
+    font-size: 34px;
+    font-family: Comodo;
+  }
+
+
+
+
+
+
+.quadrado-cinza h2, .quadrado-cinza .texto-baixo {
+    color:var(--white);
+}
+
+
+.quadrado-cinza h2 {
+    font-size: 34px;
+    margin-bottom: 40px;
+    font-family: Comodo;
+}
+
+.quadrado-cinza img {
+    width: 650px;
+    height: 250px; /* Tamanho da imagem */
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.texto-baixo {
+    padding: 80px;
+    font-size: 1.4rem;
+    font-family: Montserrat;
+}
+
+
+/* TAMANHO E COR DO STRONG (ALTERE AQUI) */
+.texto p strong {
+    font-size: 1.4rem; /* AUMENTA O TAMANHO DA FONTE DO STRONG (ALTERE AQUI) */ 
+}
+
+.texto p {
+    font-size: 1.4rem; /* AUMENTA O TAMANHO DA FONTE DO P (ALTERE AQUI) */
+}
+
+
+.final-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 90px; /* Adiciona 40px de margem inferior */
+    gap: 40px; /* Espaço entre o texto e o botão */
+    font-family: Montserrat; /* Alinhamento de fonte com o restante do site */
+    font-size: 1.8rem; /* Ajuste conforme necessário */
+    color: var(--white); /* Cor do texto */
+}
+
+.quiz-button {
+    background-color: var(--hollowpurple); /* Cor de fundo roxa */
+    color: var(--white); /* Cor do texto */
+    border: 2px solid var(--white); /* Borda branca */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 25px; /* Borda arredondada */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold; /* Texto em negrito */
+    font-size: 1.5rem; /* Ajuste conforme necessário */
+}
+
+.quiz-button:hover {
+    background-color: var(--white); /* Muda a cor de fundo para branco ao passar o mouse */
+    color: var(--hollowpurple); /* Muda a cor do texto para roxa ao passar o mouse */
+    border-color: var(--hollowpurple); /* Muda a cor da borda para roxa */
+    cursor: pointer; /* Mostra o cursor de mão ao passar sobre o botão */
+}
